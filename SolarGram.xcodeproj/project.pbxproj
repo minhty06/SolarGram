@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D419D3CF29BE63940064E89E /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D419D3CE29BE63940064E89E /* Tabs.swift */; };
 		D42FFEC729ADC06C009AB54D /* SolarGramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42FFEC629ADC06C009AB54D /* SolarGramApp.swift */; };
 		D42FFECB29ADC06E009AB54D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D42FFECA29ADC06E009AB54D /* Assets.xcassets */; };
 		D42FFECE29ADC06E009AB54D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D42FFECD29ADC06E009AB54D /* Preview Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D419D3CE29BE63940064E89E /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		D42FFEC329ADC06C009AB54D /* SolarGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42FFEC629ADC06C009AB54D /* SolarGramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarGramApp.swift; sourceTree = "<group>"; };
 		D42FFECA29ADC06E009AB54D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,7 +83,7 @@
 		D42FFEE729B44EA6009AB54D /* Important Stuff */ = {
 			isa = PBXGroup;
 			children = (
-				D42FFEDE29B42146009AB54D /* ProfileGrid.swift */,
+				D42FFEDC29B41E8D009AB54D /* Profile.swift */,
 				D42FFEE429B44C19009AB54D /* Feed.swift */,
 			);
 			path = "Important Stuff";
@@ -90,9 +92,10 @@
 		D42FFEE829B44F1A009AB54D /* Secret Sauce */ = {
 			isa = PBXGroup;
 			children = (
+				D419D3CE29BE63940064E89E /* Tabs.swift */,
 				D42FFED429B40F0F009AB54D /* ImageCropped.swift */,
 				D42FFEDA29B41B61009AB54D /* ProfileCropped.swift */,
-				D42FFEDC29B41E8D009AB54D /* Profile.swift */,
+				D42FFEDE29B42146009AB54D /* ProfileGrid.swift */,
 				D42FFEE029B43F9F009AB54D /* Post.swift */,
 			);
 			path = "Secret Sauce";
@@ -175,6 +178,7 @@
 				D42FFEE129B43F9F009AB54D /* Post.swift in Sources */,
 				D42FFEDF29B42146009AB54D /* ProfileGrid.swift in Sources */,
 				D42FFEC729ADC06C009AB54D /* SolarGramApp.swift in Sources */,
+				D419D3CF29BE63940064E89E /* Tabs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +307,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SolarGram/Preview Content\"";
+				DEVELOPMENT_TEAM = 25B3V8A5G3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -331,6 +336,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SolarGram/Preview Content\"";
+				DEVELOPMENT_TEAM = 25B3V8A5G3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

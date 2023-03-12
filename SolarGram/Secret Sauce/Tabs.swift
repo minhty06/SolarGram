@@ -1,17 +1,15 @@
 //
-//  SolarGramApp.swift
+//  Tabs.swift
 //  SolarGram
 //
-//  Created by Minh Ton on 2/27/23.
+//  Created by Minh Ton on 3/12/23.
 //
 
 import SwiftUI
 
-@main
-struct SolarGramApp: App {
+struct Tabs: View {
     @State private var selectedTab = "photos"
-    var body: some Scene {
-        WindowGroup {
+    var body: some View {
             TabView(selection: $selectedTab) {
                 Profile(profileCropped: ProfileCropped(image:Image("Minh")))
                     .tabItem {Label("Photos", systemImage: "photo")}
@@ -19,8 +17,14 @@ struct SolarGramApp: App {
                 Feed()
                 //Use SF symbols to get icons
                     .tabItem {Label("Profile", systemImage: "person.circle")}
-                    .tag("profile")
+                        .tag("profile")
             }
         }
+    }
+
+
+struct Tabs_Previews: PreviewProvider {
+    static var previews: some View {
+        Tabs()
     }
 }
