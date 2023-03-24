@@ -5,6 +5,7 @@
 //  Created by Minh Ton on 3/4/23.
 //
 
+
 import SwiftUI
 
 struct Profile: View {
@@ -13,13 +14,13 @@ struct Profile: View {
         VStack{
             profileCropped
             ProfileGrid()
-            
         }
     }
 }
 
 struct Profile_Previews: PreviewProvider {
     static var previews: some View {
-        Profile(profileCropped: ProfileCropped(image:Image("Minh")))
+        Profile(profileCropped: ProfileCropped(image:Image("Minh"))).environmentObject(FeedPostViewModel())
     }
 }
+
