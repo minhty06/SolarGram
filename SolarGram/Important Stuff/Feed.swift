@@ -20,7 +20,8 @@ struct Feed: View {
     var imageList: some View{
         List(viewModel.feedPosts) { post in
             SinglePost(post: post)
-            HStack{
+  // MARK: I tried to put these two things in a V stack and make it look nice but when I click the like button it deletes the image. Do you know why that is?
+                HStack{
                     Button{
                         viewModel.setLike(post)
                     } label: {
@@ -29,13 +30,19 @@ struct Feed: View {
                         } else {
                             Image(systemName: "heart")
                         }
-                        Spacer()
-                            .padding()
                     }
                 }
-            .listRowSeparator(.hidden)
+    
+            HStack{
+                Button{
+                    viewModel.setTrash(post)
+                } label: {
+                    Image(systemName:"trash")
+                }
+            }
+                .listRowSeparator(.hidden)
+            
         }
-           
             .listStyle(InsetListStyle())
         }
     }
@@ -43,6 +50,6 @@ struct Feed: View {
 
 struct Feed_Previews: PreviewProvider {
     static var previews: some View {
-        Feed()
+        Feed().environmentObject(FeedPostViewModel())
     }
 }

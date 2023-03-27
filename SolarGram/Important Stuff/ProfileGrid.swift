@@ -20,7 +20,7 @@ struct ProfileGrid: View {
                 //                    ImageCropped(image: Image(postImage))
                 //                        .scaledToFit()
                 ForEach(viewModel.feedPosts) { post in
-                    ImageCropped(image: Image(post.postImage))
+                    AspectImage(post.postImage)
                         .scaledToFit()
                 }
             }
